@@ -1,1 +1,1 @@
-# Cooli Project
+shell scripting tutorials for beginners
