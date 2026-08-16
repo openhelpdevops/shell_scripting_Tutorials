@@ -2,29 +2,10 @@
 
 # Shell Scripting Deep Dive
 
-**Simple English · Visual Notes · Interview-Ready Answers**
 
-**PART 20 — Shell Scripting Deep Dive**
-
-**Bash Basics | Text Processing | Practical SRE Scripts | Cron Jobs**
-
----
-
-## About this expanded edition
-
-This Markdown document preserves the complete technical content from the supplied 16-page PDF and adds extra examples, beginner-friendly explanations, interview notes, and production-oriented improvements.
-
-The original examples are kept under **Original PDF Content**. Extra material is clearly marked as **Additional Example**, **Interview Note**, or **Production Note** so the source material is not silently replaced.
-
-Research was checked against the GNU Bash, GNU grep, GNU sed, GNU awk/coreutils documentation, systemd documentation, and Cronie project documentation.
-
----
 
 # 4.1 Bash Scripting Basics
 
-## What does a well-structured bash script look like?
-
-### Original PDF Content
 
 ```bash
 #!/bin/bash
@@ -142,7 +123,7 @@ Use them deliberately, not blindly:
 ### Original PDF Content
 
 ```bash
-NAME="Irfan"
+NAME="sreejith"
 AGE=23
 readonly PI=3.14159       # constant, cannot be changed later
 
@@ -242,7 +223,7 @@ When iterating arguments, `"$@"` is usually preferred because each original argu
 
 ## Conditional statements and comparison operators
 
-### Original PDF Content
+
 
 ```bash
 if [ "$AGE" -gt 18 ]; then
@@ -335,7 +316,7 @@ Use `[ ... ]` for traditional test expressions and `[[ ... ]]` when you specific
 
 ## Loop types in bash
 
-### Original PDF Content
+
 
 ```bash
 # For loop - iterate a list
@@ -429,7 +410,7 @@ done < input.txt
 
 ## Functions, return values, and local vs global variables
 
-### Original PDF Content
+
 
 ```bash
 greet() {
@@ -654,7 +635,7 @@ sed 's/^/[APP] /' application.log
 
 ## `awk` — pattern scanning and processing reference
 
-### Original PDF Content
+
 
 ```bash
 awk '{print $1}' file.txt                         # first column
@@ -946,7 +927,7 @@ A good log-analysis interview answer should mention that log format matters. Fix
 
 ## 3. Service Health Check
 
-### Original PDF Content
+
 
 ```bash
 #!/bin/bash
